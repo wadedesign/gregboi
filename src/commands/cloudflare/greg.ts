@@ -1,4 +1,4 @@
-// src/commands/general/ai.ts
+// src/commands/cloudflare/greg.ts
 import { SlashCommandBuilder, CommandInteraction, EmbedBuilder } from 'discord.js';
 import { supabase } from '../../utils/supabaseClient';
 import fetch from 'node-fetch';
@@ -8,6 +8,7 @@ dotenv.config();
 const API_TOKEN = process.env.API_TOKEN as string;
 const ACCOUNT_ID = process.env.ACCOUNT_ID as string;
 const GATEWAY_ID = process.env.GATEWAY_ID as string;
+const MODEL = process.env.MODEL as string;
 
 module.exports = {
   data: new SlashCommandBuilder()
@@ -56,7 +57,7 @@ module.exports = {
 
       console.log('Data to be sent to AI:', `${prompt}\n\nHere is some additional data:\n${dbData}`);
 
-      const response: any = await run('@cf/meta/llama-2-7b-chat-int8', {
+      const response: any = await run(MODEL, {
         messages: [
           {
             role: 'system',
@@ -69,7 +70,7 @@ module.exports = {
         ],
       });
 
-      console.log('API Response:', response); 
+      console.log('API Response:', response);
 
       if (response && response.result && response.result.response) {
         const embed = new EmbedBuilder()
@@ -90,7 +91,9 @@ module.exports = {
 };
 
 
-// {@TODO@}
-// - remove console logs and comments
-// - add error handling
-// - make it pretier and more readable
+/**
+  * @TODO 
+  * better embed
+  * more precise answering
+  * custom emojis
+  */

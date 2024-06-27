@@ -1,9 +1,10 @@
 {
-  "name": "truasdf",
+  "name": "greg",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
-    "dev": "nodemon --exec tsx src/bot.ts"
+    "dev": "nodemon --exec tsx src/bot.ts",
+    "start": "tsx src/bot.ts"
   },
   "keywords": [],
   "author": "Andrew Wade",

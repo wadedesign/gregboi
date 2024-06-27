@@ -6,7 +6,7 @@ First off, thank you for considering contributing to our project! It's people li
 
 ### Reporting Bugs
 
-If you find a bug in the source code, you can help us by submitting an issue to our [GitHub Repository](https://github.com/username/Greg). Even better, you can submit a Pull Request with a fix.
+If you find a bug in the source code, you can help us by submitting an issue to our [GitHub Repository](https://github.com/wadedesign/gregboi). Even better, you can submit a Pull Request with a fix.
 
 ### Suggesting Enhancements
 
@@ -34,6 +34,5 @@ Please read and follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ## Additional Resources
 
-- [Issue Tracker](https://github.com/username/Greg/issues)
-- [Project Documentation](https://github.com/username/Greg/wiki)
+- [Issue Tracker](https://github.com/wadedesign/gregboi/issues)
 - [Community Chat](https://discord.gg/yourdiscordlink)

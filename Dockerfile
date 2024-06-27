@@ -20,5 +20,6 @@ COPY .env .env
 CMD ["npm", "run", "start"]
 
 
+
 ## docker build -t greg .
 ## docker run greg

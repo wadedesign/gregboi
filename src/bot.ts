@@ -1,4 +1,3 @@
-// src/bot.ts
 import { Client, GatewayIntentBits, REST, Routes, Interaction, Events, Collection, ContextMenuCommandBuilder, ApplicationCommandType } from 'discord.js';
 import dotenv from 'dotenv';
 import path from 'path';
@@ -25,7 +24,6 @@ const finalCommandDataArray = [...commandDataArray, ...contextMenuDataArray].fil
     allNames.add(cmd.name);
     return true;
 });
-
 
 client.commands = commands;
 client.contextMenus = contextMenus;
